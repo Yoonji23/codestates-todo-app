@@ -1,3 +1,10 @@
 {
-  "todos": []
+  "todos": [
+    {
+      "content": "ㅇ",
+      "done": false,
+      "date": "2022. 12. 15",
+      "id": 1
+    }
+  ]
 }

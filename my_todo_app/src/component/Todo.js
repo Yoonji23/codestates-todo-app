@@ -6,7 +6,7 @@ export const Todo = ({ todo, renderTodos }) => {
   const { id, content, done, date } = todo;
   const [isUpdateMode, setIsUpdateMode] = useState(false);
   const [textUpdateInput, setTextUpdateInput] = useState(content);
-
+//개발!
   // //체크박스 업데이트
 // const handleTodoCheckboxClick = (
 //     id,
