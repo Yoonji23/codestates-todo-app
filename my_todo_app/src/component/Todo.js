@@ -7,26 +7,6 @@ export const Todo = ({ todo, renderTodos }) => {
   const [isUpdateMode, setIsUpdateMode] = useState(false);
   const [textUpdateInput, setTextUpdateInput] = useState(content);
 
-  // //체크박스 업데이트
-// const handleTodoCheckboxClick = (
-//     id,
-//     done,
-//     isUpdateMode,
-//     setIsUpdateMode,
-//     renderTodos
-//   ) => {
-//     axios.put(`http://localhost:3001/todos/${id}`,
-//       {
-//         done: !done,
-//       },
-//     )
-//       .then(() => {
-//         setIsUpdateMode(!isUpdateMode);
-//         renderTodos();
-//       })
-//       .catch((err) => console.error("ERROR: ", err));
-//   };
-
   // //내용 업데이트
   const handleUpdateSubmitBtnClick = (
     id,
@@ -81,13 +61,6 @@ export const Todo = ({ todo, renderTodos }) => {
 
   return (
     <div>
-      {/* <input
-        type="checkbox"
-        checked={done}
-        onChange={() => {
-        handleTodoCheckboxClick(id, done, renderTodos);
-       }}
-      ></input> */}
       {isUpdateMode ? (
           <>
           <input
